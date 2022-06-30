@@ -1,2 +1,1 @@
-#!/bin/bash
-gcc $CFILE -o | -tr=".o" /c
+export $CFILE=1-main.c ; .
