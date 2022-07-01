@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 
+
 /**
  *
  *  *main -> assign a random number to the variable n each time it is executed
@@ -15,23 +16,39 @@ int main(void)
 
 {
 
-		int ch;
+	char ch;
+
+	int n;
 
 
 
-			for (ch = 97; ch <= 122; ch++)
+	for (n = 48; n <= 57; n++)
 
-					{
-
-								putchar(ch);
-
-									}
-
-				putchar(10); /* this is an ascii code for new line*/
+	{
 
 
 
-					return (0);
+		putchar(n);
+
+	}
+
+	for (ch = 'a'; ch <= 'f'; ch++)
+
+	{
+
+
+
+		putchar(ch);
+
+	}
+
+
+
+	putchar(10);
+
+
+
+	return (0);
 
 }
 
