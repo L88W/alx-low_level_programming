@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <stdio/h>
+#include <main.h>
 
-int Main(void);
+int main(void);
 {
 	int ch;
 
