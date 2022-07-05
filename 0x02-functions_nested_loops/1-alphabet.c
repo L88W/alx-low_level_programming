@@ -1,8 +1,3 @@
-/**
- * main - holds and brings functions
- *
- * return -0
- */
 #include "main.h"
 
 /**
