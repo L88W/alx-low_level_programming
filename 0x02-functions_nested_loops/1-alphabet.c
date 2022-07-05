@@ -1,6 +1,7 @@
 /**
  * main - holds and brings functions
  *
+ * return -0
  */
 #include "main.h"
 
@@ -14,12 +15,8 @@ void print_alphabet(void)
 {
 	char alpha;
 
-	int _putchar(int c);
-
 	for (alpha = 97; alpha <= 122; alpha++)
 		_putchar(alpha);
 
 	_putchar('\n');
-
-	return (0);
 }
