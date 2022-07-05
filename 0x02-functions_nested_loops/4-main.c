@@ -11,7 +11,7 @@ void test_isalpha(int n)
 
 	r = _isalpha(n);
 	_putchar(r = '0');
-	_putchar('\ln');
+	_putchar('/n');
 }
 
 /**
@@ -20,6 +20,6 @@ void test_isalpha(int n)
  */
 int main(void)
 {
-	test_isalpha('H')
+	test_isalpha('H');
 	return (0);
 }
