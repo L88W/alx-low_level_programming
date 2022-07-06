@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - does that
  * @n : starting n
@@ -8,12 +8,12 @@ void print_to_98(int n)
 {
 while
 {
-	printf("%i, ", n)
+	printf("%i,", n)
 	n++;
 }
 while (n > 98)
 {
-	printf("%i, ", n)
+	printf("%i,", n);
 	n--;
 }
 
