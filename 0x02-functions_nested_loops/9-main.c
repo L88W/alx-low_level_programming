@@ -1,25 +1,12 @@
 #include "main.h"
 
 /**
- * test_isalpha - Test the funtion
- *
- * @n: Number to pass to isalpha funtion
+ * main - got the sauce
+ * Return: 0
  */
-void test_isalpha(int n)
-{
-	int r;
 
-	r = _isalpha(n);
-	_putchar(r = '0');
-	_putchar('/n');
-}
-
-/**
- * main - check goods
- * Return: always 0
- */
 int main(void)
 {
-	test_isalpha('H');
+	times_table();
 	return (0);
 }
