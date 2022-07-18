@@ -1,5 +1,5 @@
 #include "main.h"
-/*8
+/**
  * _strbrk - searches bytes in string
  * @s: first prestent
  * @accept: matches bytes o r null if non
