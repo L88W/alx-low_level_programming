@@ -1,9 +1,15 @@
 #include "main.h"
 /**
- * _print_rev_recursion - prints a string in revers
- * @s: input
- * Return: voif
+ * _print_rev_recursion - prints string in reveres
+ * @s: char pointer
+ *
+ * Return: 0
  */
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
-	int (
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
+}
