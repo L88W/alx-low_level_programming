@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - changes money
  * @argc: argument
@@ -9,32 +9,30 @@
 
 int main(int argc, char *argv[])
 {
-	int a, n = 0, i, t;
-	int c[5] = {25, 10, 5, 2, 1};
+	int cents, nCoins = 0;
 
-	if (argc != 2)
+	if (argc == 1 || argc > 2)
 	{
-		puts("Error");
-		return (1);
-
-	}
-	a = atoi(argv[1]);
-	if (a <= 0)
-	{
-		puts("0");
+		printf("Error\n");
 		return (1);
 	}
-	else
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		for (i = 0; i < 5; i++)
-		{
-			t = a / c[i];
-			a -= t * c[i];
-			n += t;
-			if (a == 0)
-			break;
-		}
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		nCoins += 1;
 	}
-	printf("%d\n", n);
+	printf("%d\n", nCoins);
 	return (0);
 }
