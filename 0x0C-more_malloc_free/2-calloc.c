@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _calloc - memeory for array of @nemb
- * @nmeemb: allocates memory for arry
+ * _calloc - memeory for array of
+ * @nmemb: allocates memory for arry
  * @size: aloocates element of size
  *
  * Return: pointer
